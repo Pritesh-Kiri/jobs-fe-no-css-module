@@ -1,0 +1,92 @@
+{
+  "Curicullumdata": [
+    {
+      "topic": "Fundamentals of Digital Marketing",
+      "weeks": "2 Weeks",
+      "casestudy": "1 Casestudy",
+      "quiz": "2 Quizzes",
+      "description": "",
+      "chapter1": "Chapter 1: Introduction to Marketing",
+      "chapter2": "Chapter 2: Segmentation, Targeting and Positioning",
+      "chapter3": "Chapter 3: Marketing Management Through the concept of 4ps",
+      "chapter4": "Chapter 4: Introduction to Branding"
+    },
+    {
+      "topic": "Digital Marketing Channels and Metrics",
+      "weeks": "1 Week",
+      "casestudy": "2 Casestudy",
+      "quiz": "1 Quiz",
+      "description": "",
+      "chapter1": "Chapter 1: Understanding the digital consumer",
+      "chapter2": "Chapter 2: Digital Marketing Channels",
+      "chapter3": "Chapter 3: digital marketing metrics",
+      "chapter4": ""
+    },
+    {
+      "topic": "Social Media Marketing",
+      "weeks": "2 Weeks",
+      "casestudy": "1 Live-project",
+      "quiz": "4 Quizzes",
+      "description": "",
+      "chapter1": "Chapter 1: Establishing a brand’s social media presence",
+      "chapter2": "Chapter 2: creating a social media plan",
+      "chapter3": "Chapter 3: ampliying social media content",
+      "chapter4": "Chapter 4: analyse and optimise social media performance"
+    },
+    {
+      "topic": "Advanced Search Engine Optimisation",
+      "weeks": "2 Weeks",
+      "casestudy": "1 Casestudy",
+      "quiz": "2 Quizzes",
+      "description": "",
+      "chapter1": "Chapter 1: introduction to Search engine optimisation ",
+      "chapter2": "Chapter 2: SEO: Keyword Strategy",
+      "chapter3": "",
+      "chapter4": "Chapter 3: SEO: Auditing and strategy"
+    },
+    {
+      "topic": "Display Advertising",
+      "weeks": "2 Weeks",
+      "casestudy": "1 Casestudy",
+      "quiz": "2 Quizzes",
+      "description": "",
+      "chapter1": "Chapter 1: Introduction To Display Advertising",
+      "chapter2": "Chapter 2: Affiliate Marketing And Ad Networks",
+      "chapter3": "Chapter 3: Ad Exchange And Progammatic Ad Buying",
+      "chapter4": "Chapter 4: Future Of Display Advertising"
+    },
+    {
+      "topic": "Content Marketing",
+      "weeks": "1 Week",
+      "casestudy": "1 Casestudy",
+      "quiz": "2 Quizzes",
+      "description": "",
+      "chapter1": "Chapter 1: Introduction To Content Marketing And Strategy",
+      "chapter2": "Chapter 2: Content Marketing Methodology",
+      "chapter3": "Chapter 3: Measuring Content Marketing Efforts",
+      "chapter4": ""
+    },
+    {
+      "topic": "User Journey and Nurturing",
+      "weeks": "3 Weeks",
+      "casestudy": "1 Casestudy",
+      "quiz": "4 Quizzes",
+      "description": "",
+      "chapter1": "Chapter 1: Lead Management",
+      "chapter2": "Chapter 2: email marketing and strategy",
+      "chapter3": "Chapter 3: email marketing analysis and optimisation",
+      "chapter4": "Chapter 4: remarketing and the channels to master"
+    },
+    {
+      "topic": "Website Analytics",
+      "weeks": "3 Weeks",
+      "casestudy": "1 Casestudy",
+      "quiz": "4 Quizzes",
+      "description": "",
+      "chapter1": "Chapter 1: Introduction To Website Analytics",
+      "chapter2": "Chapter 2: Marketing Analytics And Data Collection",
+      "chapter3": "Chapter 3: Google Analytics: Module 1",
+      "chapter4": "Chapter 3: Google Analytics: Module 2"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+
+.journey-container {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../static/journey-background.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .journey-container .journey-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 125px 0;
+  }
+  
+  .journey-container .journey-section-rev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 125px 0;
+  }
+  
+  .journey-container .journey-section h2 {
+    font-size: 55px;
+    margin-bottom: 5px;
+  }
+  
+  .journey-container .journey-section .section-subtitle {
+    font-size: 18px;
+    width: 85%;
+  }
+  
+  .journey-container .journey-section .section-left {
+    width: 40%;
+  }
+  
+  .journey-container .journey-section .section-right {
+    width: 60%;
+  }
+  
+  @media only screen and (max-width: 776px) {
+    .journey-container {
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      overflow: hidden;
+    }
+  
+    .journey-container .journey-section {
+      display: flex;
+      flex-direction: column !important;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      width: 100%;
+      max-width: 1280px;
+      margin: 10px 0;
+      padding: 20px 50px !important;
+    }
+  
+    .journey-container .journey-section-rev {
+      display: flex;
+      flex-direction: column-reverse !important;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      width: 100%;
+      max-width: 776px;
+      margin: 0px 0;
+    }
+  
+    .journey-container .journey-section h2 {
+      font-size: 35px;
+      margin-bottom: 5px;
+    }
+  
+    .journey-container .journey-section .section-subtitle {
+      font-size: 18px;
+      width: 85%;
+    }
+  
+    .journey-container .journey-section .section-left {
+      width: 100%;
+    }
+  
+    .journey-container .journey-section .section-right {
+      width: 100%;
+    }
+  }

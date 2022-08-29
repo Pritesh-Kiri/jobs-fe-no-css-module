@@ -1,0 +1,19 @@
+{
+  "CoachData": [
+    {
+      "background": "one",
+      "title": "Learn Moblie Product Photography",
+      "subtitle": " one Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed voluptatum accusantium repudiandae eligendi"
+    },
+    {
+      "background": "two",
+      "title": "Learn Graphic Design",
+      "subtitle": " two Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed voluptatum accusantium repudiandae eligendi"
+    },
+    {
+      "background": "three",
+      "title": "Learn piano and music",
+      "subtitle": "three Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed voluptatum accusantium repudiandae eligendi"
+    }
+  ]
+}
