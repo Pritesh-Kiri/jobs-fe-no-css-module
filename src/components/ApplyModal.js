@@ -5,12 +5,9 @@ import { RiCloseLine } from "react-icons/ri"
 const ApplyModal = ({ setIsOpen }) => {
   return (
     <>
-      {/* <div className="darkBG" onClick={() => setIsOpen(false)} /> */}
       <div className="centered">
         <div className="modal">
-          {/* <div className="modalHeader">
-            <h5 className="heading">Dialog</h5>
-          </div> */}
+   
           <button className="closeBtn" onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>

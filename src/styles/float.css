@@ -1,0 +1,76 @@
+.float-btn,
+body h2,
+h3,
+h4 {
+  font-family: var(--title-font-hero);
+}
+.float-btn {
+  font-size: 18px !important;
+  font-weight: 700;
+  max-height: 200px;
+  opacity: 0;
+  position: fixed;
+  right: 100px;
+  top: 32px;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 10000;
+}
+.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.float-btn div {
+  background-color: var(--yellow) !important;
+  border-radius: 7px;
+  color: var(--black-bg);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 15px 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media only screen and (max-width: 776px) {
+  .float-button-container {
+    justify-content: center;
+    position: fixed;
+  }
+  .float-btn,
+  .float-button-container {
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 10000;
+  }
+  .float-btn {
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  .show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+  .float-btn div {
+    background-color: var(--yellow) !important;
+    border-radius: 0;
+    color: var(--black-bg);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 15px 25px;
+    text-align: center;
+    width: 100%;
+  }
+  .hide-float {
+    display: none;
+  }
+}

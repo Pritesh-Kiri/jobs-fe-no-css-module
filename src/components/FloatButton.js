@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import ApplyModal from "./ApplyModal"
+import "../styles/float.css"
 
 const FloatButton = ({ pause, setpause }) => {
   const [show, setshow] = useState(false)

@@ -141,6 +141,7 @@ const Hero = ({ setpause }) => {
         </div>
       </div>
     </div>
+    
   )
 }
 
