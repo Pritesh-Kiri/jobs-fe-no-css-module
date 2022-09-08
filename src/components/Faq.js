@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import JSON from "../data/faq.json"
 import Question from "./Faq-question"
+import { faqsection, faqinner, faqinnersection } from "../styles/faq.module.css"
 
 const Faq = () => {
   const [clicked, setClicked] = useState("0")
@@ -12,10 +13,10 @@ const Faq = () => {
     setClicked(index)
   }
   return (
-    <section className="faq-section">
+    <section className={faqsection}>
       <h2>Frequently Asked Questions</h2>
-      <div className="faq-inner">
-        <div className="faq-inner-section">
+      <div className={faqinner}>
+        <div className={faqinnersection}>
           {JSON.Faqdata.map((item, index) => {
             return (
               <Question

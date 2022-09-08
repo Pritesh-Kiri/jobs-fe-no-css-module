@@ -3,6 +3,11 @@ import ExpertCard from "./ExpertCard"
 import JSON from "../data/Experts.json"
 import Slider from "react-slick"
 import "../styles/Expert.css"
+import {
+  maincontainerExpert,
+  Experttitle,
+  containerExpert,
+} from "../styles/expert.module.css"
 
 const ExpertSection = () => {
   const settings = {
@@ -36,16 +41,16 @@ const ExpertSection = () => {
   }
 
   return (
-    <div className="main-container-Expert">
-      <section className="Expert-title">
+    <div className={maincontainerExpert}>
+      <section className={Experttitle}>
         <h2>Learn Directly From Experts</h2>
         <p>
           Network and learn under the guidance of best digital marketing
           experts.
         </p>
       </section>
-      <div className="container-Expert">
-        <section className="coach-slider">
+      <div className={containerExpert}>
+        <section>
           <Slider {...settings}>
             {JSON.ExpertData.map((item, index) => (
               <ExpertCard key={index} item={item} />

@@ -3,6 +3,16 @@ import JSON from "../data/curicullum.json"
 import CuricullumTopic from "./CuricullumTopic"
 import "../styles/modal.css"
 import Modal from "./Modal"
+import {
+  curicullumsection,
+  curicullumtitle,
+  curicullumicons,
+  curicullumicon,
+  curicullumcontainer,
+  curiculluminner,
+  curiculluminnersection,
+  curicullumdownload,
+} from "../styles/curriculum.module.css"
 const Curicullum = ({ setpause }) => {
   const [clicked, setClicked] = useState("0")
   const [isOpen, setIsOpen] = useState(false)
@@ -22,16 +32,16 @@ const Curicullum = ({ setpause }) => {
   }
 
   return (
-    <section className="curicullum-section">
-      <div className="curicullum-title">
+    <section className={curicullumsection}>
+      <div className={curicullumtitle}>
         <h2>Best in industry curriculum</h2>
         <p>
           Best-in-class content by leading faculty and industry leaders in the
           form of videos, , live sessions and projects
         </p>
       </div>
-      <div className="curicullum-icons">
-        <div className="curicullum-icon">
+      <div className={curicullumicons}>
+        <div className={curicullumicon}>
           <img
             src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095035/Levelup%20jobs/curicullum%20/0-09_1_hk8pip.png"
             alt=""
@@ -39,7 +49,7 @@ const Curicullum = ({ setpause }) => {
           <p>17 Weeks Of Extensive Training</p>
         </div>
 
-        <div className="curicullum-icon">
+        <div className={curicullumicon}>
           <img
             src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095035/Levelup%20jobs/curicullum%20/0-10_1_j4yqkf.png"
             alt=""
@@ -47,7 +57,7 @@ const Curicullum = ({ setpause }) => {
           <p>5+ Case Studies and Projects </p>
         </div>
 
-        <div className="curicullum-icon">
+        <div className={curicullumicon}>
           <img
             src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095035/Levelup%20jobs/curicullum%20/0-12_1_weoagu.png"
             alt=""
@@ -55,7 +65,7 @@ const Curicullum = ({ setpause }) => {
           <p>10+ tools and skills</p>
         </div>
 
-        <div className="curicullum-icon">
+        <div className={curicullumicon}>
           <img
             src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095034/Levelup%20jobs/curicullum%20/0-13_1_vpppqz.png"
             alt=""
@@ -63,9 +73,9 @@ const Curicullum = ({ setpause }) => {
           <p>Over 20 Live Interactions</p>
         </div>
       </div>
-      <div className="curicullum-container" id="my-element-start">
-        <div className="curicullum-inner">
-          <div className="curicullum-inner-section">
+      <div className={curicullumcontainer} id="my-element-start">
+        <div className={curiculluminner}>
+          <div className={curiculluminnersection}>
             {JSON.Curicullumdata.map((item, index) => {
               return (
                 <CuricullumTopic
@@ -78,7 +88,7 @@ const Curicullum = ({ setpause }) => {
             })}
           </div>
         </div>
-        <div className="curicullum-download">
+        <div className={curicullumdownload}>
           <img
             src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659099497/Levelup%20jobs/curicullum%20/phone_learning-01_1_1_ebgsdl.png"
             alt=""

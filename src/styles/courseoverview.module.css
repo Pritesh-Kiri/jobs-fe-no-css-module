@@ -1,0 +1,140 @@
+.courseoverviewcontainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 120px 0;
+  }
+  .courseoverviewcontainer .COtitle {
+    max-width: 1140px;
+    width: 100%;
+  }
+  .courseoverviewcontainer .COtitle h2 {
+    font-family: var(--title-font-hero);
+    font-size: var(--normal-heading-font-size);
+    font-weight: 700;
+    text-align: center;
+  }
+  .courseoverviewcontainer .COcontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    max-width: 1140px;
+    width: 100%;
+  }
+  .courseoverviewcontainer .COcontent h4 {
+    color: #fbc93b;
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .courseoverviewcontainer .COcontent p {
+    font-family: var(--subtitle-font-hero);
+    font-size: 16px;
+  }
+  .courseoverviewcontainer .COcontent .COcard:nth-child(2) h4,
+  .courseoverviewcontainer .COcontent .COcard:nth-child(4) h4,
+  .courseoverviewcontainer .COcontent .COcard:nth-child(5) h4,
+  .courseoverviewcontainer .COcontent .COcard:nth-child(7) h4 {
+    color: #2463b0;
+  }
+  .courseoverviewcontainer .COcontent .COcard {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    height: 160px;
+    margin-bottom: 50px;
+    width: 230px;
+  }
+  .courseoverviewcontainer .COcontent .COcard .COcardicon img {
+    height: 45px;
+    width: 45px;
+  }
+  .courseoverviewcontainer .COcontent .COcard .COcardicon {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.121);
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    position: relative;
+    right: -10px;
+    top: -30px;
+    width: 45px;
+  }
+  .courseoverviewcontainer .COcontent .COcard .COcardcontent {
+    padding: 10px;
+    position: relative;
+    top: -25px;
+  }
+  @media only screen and (max-width: 776px) {
+    .courseoverviewcontainer {
+      padding: 10px 10px;
+    }
+    .courseoverviewcontainer .COtitle h2 {
+      font-size: 30px;
+      padding-left: 0;
+      text-align: center;
+    }
+    .courseoverviewcontainer .COcontent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+      width: 100%;
+    }
+    .courseoverviewcontainer .COcontent .COcard {
+      background-color: #fff;
+      border-radius: 12px;
+      height: 165px;
+      margin: 25px 10px 15px;
+      width: 150px;
+    }
+    .courseoverviewcontainer .COcontent .COcard .COcardicon {
+      align-items: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px -1px #000;
+      display: flex;
+      height: 30px;
+      justify-content: center;
+      position: relative;
+      right: -10px;
+      top: -15px;
+      width: 30px;
+    }
+    .courseoverviewcontainer .COcontent .COcard .COcardicon img {
+      height: 30px;
+      width: 30px;
+    }
+    .courseoverviewcontainer .COcontent .COcard h4 {
+      margin-bottom: 2px;
+    }
+    .courseoverviewcontainer .COcontent .COcard:nth-child(2) h4,
+    .courseoverviewcontainer .COcontent .COcard:nth-child(3) h4,
+    .courseoverviewcontainer .COcontent .COcard:nth-child(5) h4,
+    .courseoverviewcontainer .COcontent .COcard:nth-child(6) h4 {
+      color: #fbc93b;
+    }
+    .courseoverviewcontainer .COcontent .COcard:first-child h4,
+    .courseoverviewcontainer .COcontent .COcard:nth-child(4) h4,
+    .courseoverviewcontainer .COcontent .COcard:nth-child(5) h4,
+    .courseoverviewcontainer .COcontent .COcard:nth-child(8) h4 {
+      color: #e06363;
+    }
+    .courseoverviewcontainer .COcontent .COcard .COcardcontent {
+      padding: 0 10px 10px;
+      position: relative;
+      top: -15px;
+    }
+    .courseoverviewcontainer .COcontent .COcard .COcardcontent p {
+      font-size: 12px;
+      margin-top: 8px;
+    }
+  }

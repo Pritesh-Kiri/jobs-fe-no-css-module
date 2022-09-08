@@ -1,15 +1,21 @@
 import React from "react"
 import "../styles/style.css"
-// import { img } from "gatsby-plugin-image"
+import {
+  powercontainer,
+  powertitle,
+  powerlogos,
+  row1,
+  row2,
+} from "../styles/poweredby.module.css"
 const PoweredBy = () => {
   return (
     <div>
-      <div className="power-container">
-        <div className="power-title">
+      <div className={powercontainer}>
+        <div className={powertitle}>
           <h2>We’re trusted, backed and powered by the best in the industry</h2>
         </div>
-        <div className="power-logos">
-          <div className="row1">
+        <div className={powerlogos}>
+          <div className={row1}>
             <img
               src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659446131/Levelup%20jobs/Powered%20by/Accenture_copy-100_bbprx4.jpg"
               placeholder="blurred"
@@ -36,7 +42,7 @@ const PoweredBy = () => {
               alt="Vc"
             />
           </div>
-          <div className="row2">
+          <div className={row2}>
             <img
               src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659446130/Levelup%20jobs/Powered%20by/Accenture_copy_3-100_ooq7ao.jpg"
               placeholder="blurred"

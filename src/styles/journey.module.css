@@ -1,0 +1,50 @@
+.journeycontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 120px;
+}
+.journeytitle {
+  display: flex;
+  justify-content: center;
+}
+.journeycontainer .journeytitle h2 {
+  font-size: 35px;
+  text-align: center;
+}
+.journeycontainer .journeycontent {
+  display: flex;
+  justify-content: center;
+}
+.journeycontainer .journeycontent .journeyimgdesktop {
+  display: block;
+  width: 100%;
+}
+.journeycontainer .journeycontent .journeyimgmobile {
+  display: none;
+  width: 90%;
+}
+@media only screen and (max-width: 776px) {
+  .journeycontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .journeytitle {
+    display: flex;
+    justify-content: center;
+  }
+  .journeycontainer .journeytitle h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .journeycontainer .journeycontent {
+    display: flex;
+    justify-content: center;
+  }
+  .journeycontainer .journeycontent .journeyimgdesktop {
+    display: none;
+  }
+  .journeycontainer .journeycontent .journeyimgmobile {
+    display: block;
+  }
+}
