@@ -1,17 +1,22 @@
 import React from "react"
-
+import {
+  hiringmain,
+  hiringcontainer,
+  hiringleft,
+  hiringright,
+} from "../styles/hiring.module.css"
 const Hiring = () => {
   return (
-    <div className="hiring-main">
-      <div className="hiring-container">
-        <div className="hiring-left">
+    <div className={hiringmain}>
+      <div className={hiringcontainer}>
+        <div className={hiringleft}>
           <h2>Our Global Hiring Partners</h2>
           <p>
             Get a 100% Guaranteed Job Placement Assistance and work with top
             digital marketing agencies and brands across the globe.
           </p>
         </div>
-        <div className="hiring-right">
+        <div className={hiringright}>
           <img
             src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659428066/Levelup%20jobs/Tools/hiring/Accenture-100_vk8lnw.jpg"
             alt=""

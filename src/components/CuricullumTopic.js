@@ -1,16 +1,26 @@
 import React, { useRef } from "react"
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
+import {
+  question,
+  curicullumtopicinner,
+  topic,
+  btn,
+  answersection,
+  answer,
+  nochapter,
+} from "../styles/curriculum.module.css"
+
 const CuricullumTopic = ({ item, onToggle, active }) => {
   const contentEl = useRef()
   return (
-    <article className="question">
-      <div className="curicullum-topic-inner">
+    <article className={question}>
+      <div className={curicullumtopicinner}>
         <header aria-hidden="true" onClick={onToggle}>
-          <div className="topic">
+          <div className={topic}>
             <h4>{item.topic}</h4>
             <p>{`${item.weeks}  | ${item.casestudy}  | ${item.quiz}  `}</p>
           </div>
-          <p className="btn">
+          <p className={btn}>
             {active ? (
               <AiOutlineMinus fill="black" />
             ) : (
@@ -20,26 +30,26 @@ const CuricullumTopic = ({ item, onToggle, active }) => {
         </header>
         <div
           ref={contentEl}
-          className="answer-section"
+          className={answersection}
           style={
             active
               ? { height: contentEl.current.scrollHeight }
               : { height: "0px" }
           }
         >
-          <p className="answer">{item.description}</p>
+          <p className={answer}>{item.description}</p>
           <ul>
             <li
-              className={item.chapter1 ? "" : "no-chapter"}
+              className={item.chapter1 ? "" : `${nochapter}`}
             >{` ${item.chapter1}`}</li>
             <li
-              className={item.chapter2 ? "" : "no-chapter"}
+              className={item.chapter2 ? "" : `${nochapter}`}
             >{` ${item.chapter2}`}</li>
             <li
-              className={item.chapter3 ? "" : "no-chapter"}
+              className={item.chapter3 ? "" : `${nochapter}`}
             >{` ${item.chapter3}`}</li>
             <li
-              className={item.chapter4 ? "" : "no-chapter"}
+              className={item.chapter4 ? "" : `${nochapter}`}
             >{` ${item.chapter4}`}</li>
           </ul>
         </div>

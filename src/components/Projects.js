@@ -2,6 +2,12 @@ import React from "react"
 import ProjectCard from "./ProjectCard"
 import JSON from "../data/projects.json"
 import Slider from "react-slick"
+import {
+  maincontainerproject,
+  projecttitle,
+  containerproject,
+  hideproject,
+} from "../styles/project.module.css"
 import "../styles/project.css"
 
 const Projects = ({ pause }) => {
@@ -36,8 +42,8 @@ const Projects = ({ pause }) => {
   }
 
   return (
-    <div className="main-container-project" id="my-element-end">
-      <section className="project-title">
+    <div className={maincontainerproject} id="my-element-end">
+      <section className={projecttitle}>
         <h2>Industry Projects and Case Studies</h2>
         <p>
           Learn through real-life industry projects, run live marketing
@@ -46,10 +52,12 @@ const Projects = ({ pause }) => {
       </section>
       <div
         className={
-          pause ? "container-project hide-project" : "container-project"
+          pause
+            ? `${containerproject} + " " +  ${hideproject} }`
+            : `${containerproject}`
         }
       >
-        <section className="coach-slider">
+        <section>
           <Slider {...settings}>
             {JSON.ProjectData.map((item, index) => (
               <ProjectCard key={index} item={item} />

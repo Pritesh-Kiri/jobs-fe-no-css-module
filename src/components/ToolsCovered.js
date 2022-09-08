@@ -1,10 +1,15 @@
 import React from "react"
-
+import {
+  toolsmain,
+  toolscontainer,
+  toolsleft,
+  toolsright,
+} from "../styles/tools.module.css"
 const ToolsCovered = () => {
   return (
-    <div className="tools-main">
-      <div className="tools-container">
-        <div className="tools-left">
+    <div className={toolsmain}>
+      <div className={toolscontainer}>
+        <div className={toolsleft}>
           <h2>Learn all the industry relevant tools</h2>
           <p>
             Get acquainted with 20+ In demand hands on digital marketing tools,
@@ -12,7 +17,7 @@ const ToolsCovered = () => {
             analytics tools and many more.
           </p>
         </div>
-        <div className="tools-right">
+        <div className={toolsright}>
           <img
             src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659425110/Levelup%20jobs/Tools/Word-Press_uwpfql.jpg"
             alt=""

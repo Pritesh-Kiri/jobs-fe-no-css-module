@@ -1,15 +1,23 @@
 import React, { useRef } from "react"
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
+import {
+  question,
+  Uadvantagetopicinner,
+  topic,
+  btn,
+  answersection,
+  anscol,
+} from "../styles/Uadvantage.module.css"
 const UAdvantage = ({ item, onToggle, active }) => {
   const contentEl = useRef()
   return (
-    <article className="question">
-      <div className="Uadvantage-topic-inner">
+    <article className={question}>
+      <div className={Uadvantagetopicinner}>
         <header aria-hidden="true" onClick={onToggle}>
-          <div className="topic">
+          <div className={topic}>
             <h4>{item.topic}</h4>
           </div>
-          <p className="btn">
+          <p className={btn}>
             {active ? (
               <AiOutlineMinus fill="black" />
             ) : (
@@ -19,14 +27,14 @@ const UAdvantage = ({ item, onToggle, active }) => {
         </header>
         <div
           ref={contentEl}
-          className="answer-section"
+          className={answersection}
           style={
             active
               ? { height: contentEl.current.scrollHeight }
               : { height: "0px" }
           }
         >
-          <div className="ans-col">
+          <div className={anscol}>
             {/* <h5>{item.col1}</h5> */}
             <p>{item.col1pt1}</p>
             <p>{item.col1pt2}</p>

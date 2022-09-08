@@ -1,81 +1,92 @@
 import React from "react"
-
+import {
+  footersection,
+  footermain,
+  footerlinkscontentwrapper,
+  footertitle,
+  footerlinkscontainer,
+  footerlink,
+  footersecondary,
+  footersecondarycol1,
+  footersocialiconscontainer,
+  footersociallink,
+} from "../styles/footer.module.css"
 const Footer = () => {
   return (
-    <div id="footer" className="footer-section">
-      <div className="footer-main">
-        <div className="footer-links-content-wrapper">
+    <div id="footer" className={footersection}>
+      <div className={footermain}>
+        <div className={footerlinkscontentwrapper}>
           <div className="footer-column">
-            <h1 className="footer-title">Company</h1>
-            <div className="footer-links-container">
-              <a href="/about" className="footer-link">
+            <h1 className={footertitle}>Company</h1>
+            <div className={footerlinkscontainer}>
+              <a href="/about" className={footerlink}>
                 About us
               </a>
-              <a href="/contact" className="footer-link">
+              <a href="/contact" className={footerlink}>
                 Careers
               </a>
             </div>
           </div>
           <div className="footer-column">
-            <h1 className="footer-title">Community</h1>
-            <div className="footer-links-container">
-              <a href="/about" className="footer-link">
+            <h1 className={footertitle}>Community</h1>
+            <div className={footerlinkscontainer}>
+              <a href="/about" className={footerlink}>
                 Intern with us
               </a>
-              <a href="/contact" className="footer-link">
+              <a href="/contact" className={footerlink}>
                 Hire from us
               </a>
-              <a href="/community-program" className="footer-link">
+              <a href="/community-program" className={footerlink}>
                 Unschool for business
               </a>
             </div>
           </div>
 
           <div className="footer-column">
-            <h1 className="footer-title">Coaching</h1>
-            <div className="footer-links-container">
-              <a href="/policies/disclaimer" className="footer-link">
+            <h1 className={footertitle}>Coaching</h1>
+            <div className={footerlinkscontainer}>
+              <a href="/policies/disclaimer" className={footerlink}>
                 Teach with us
               </a>
-              <a href="/policies/terms_of_service" className="footer-link">
+              <a href="/policies/terms_of_service" className={footerlink}>
                 Partner with us
               </a>
             </div>
           </div>
 
           <div className="footer-column">
-            <h1 className="footer-title">Courses</h1>
-            <div className="footer-links-container">
-              <a href="/policies/disclaimer" className="footer-link">
+            <h1 className={footertitle}>Courses</h1>
+            <div className={footerlinkscontainer}>
+              <a href="/policies/disclaimer" className={footerlink}>
                 Jobs Program
               </a>
-              <a href="/policies/terms_of_service" className="footer-link">
+              <a href="/policies/terms_of_service" className={footerlink}>
                 Free Courses
               </a>
 
-              <a href="/policies/terms_of_service" className="footer-link">
+              <a href="/policies/terms_of_service" className={footerlink}>
                 Internship Courses
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="footer-secondary">
-        <div className="footer-secondary-col-1">
-          <a href="/" className="footer-link">
+      <div className={footersecondary}>
+        <div className={footersecondarycol1}>
+          <a href="/" className={footerlink}>
             Support
           </a>
-          <a href="/" className="footer-link">
+          <a href="/" className={footerlink}>
             Privacy
           </a>
-          <a href="/" className="footer-link">
+          <a href="/" className={footerlink}>
             Terms
           </a>
         </div>
         <h4>Ⓒ Edupolis Education Technology Private LImited, 2022</h4>
 
-        <div className="footer-social-icons-container footer-secondary-col-2">
-          <a href="mailto:support@unschool.in" className="footer-social-link">
+        <div className={footersocialiconscontainer}>
+          <a href="mailto:support@unschool.in" className={footersociallink}>
             <img
               src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMiAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgb3BhY2l0eT0iMC43Ij4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNi4xMDI1IiByPSIxNSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiPgo8cGF0aCBkPSJNMTYgMTQuOTA3M0wyMi42MDEzIDExLjAzNDRDMjIuNDExMyAxMC43NTMyIDIyLjE1NTcgMTAuNTIyNSAyMS44NTY3IDEwLjM2MkMyMS41NTc3IDEwLjIwMTUgMjEuMjI0MSAxMC4xMTYyIDIwLjg4NDcgMTAuMTEzM0gxMS4xMTUyQzEwLjc3NDEgMTAuMTEzMSAxMC40MzgxIDEwLjE5NjMgMTAuMTM2NSAxMC4zNTU3QzkuODM0OTIgMTAuNTE1IDkuNTc2OCAxMC43NDU2IDkuMzg0NjQgMTEuMDI3NEwxNiAxNC45MDczWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE2LjY5NzcgMTYuMTA3NUMxNi40ODU3IDE2LjIzMDUgMTYuMjQ1IDE2LjI5NTUgMTUuOTk5OSAxNi4yOTZDMTUuNzU1NCAxNi4yOTc2IDE1LjUxNDggMTYuMjM1MSAxNS4zMDIxIDE2LjExNDVMOS4wMjE3MyAxMi40MzdWMTkuMTg0OUM5LjAyMTczIDE5Ljc0MDEgOS4yNDIyOSAyMC4yNzI2IDkuNjM0ODkgMjAuNjY1MkMxMC4wMjc1IDIxLjA1NzggMTAuNTYgMjEuMjc4NCAxMS4xMTUyIDIxLjI3ODRIMjAuODg0N0MyMS40Mzk5IDIxLjI3ODQgMjEuOTcyNCAyMS4wNTc4IDIyLjM2NSAyMC42NjUyQzIyLjc1NzYgMjAuMjcyNiAyMi45NzgxIDE5Ljc0MDEgMjIuOTc4MSAxOS4xODQ5VjEyLjQzN0wxNi42OTc3IDE2LjEwNzVaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDAiPgo8cmVjdCB3aWR0aD0iMTQiIGhlaWdodD0iMTEuMTg2OSIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkgMTAuMTAyNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"
               alt="Mail"
@@ -83,7 +94,7 @@ const Footer = () => {
           </a>
           <a
             href="https://www.instagram.com/unschool.it"
-            className="footer-social-link"
+            className={footersociallink}
             target="_blank"
             rel="noreferrer"
           >
@@ -94,7 +105,7 @@ const Footer = () => {
           </a>
           <a
             href="https://www.youtube.com/channel/UCZgKk2UN8e7CDBrDa7VfGLQ"
-            className="footer-social-link"
+            className={footersociallink}
           >
             <img
               src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMiAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgb3BhY2l0eT0iMC43Ij4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNi4xMDI1IiByPSIxNSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiPgo8cGF0aCBkPSJNMjIuNjk4MiAxMi42MzU5QzIyLjUzNzMgMTIuMDM3NiAyMi4wNjU3IDExLjU2NiAyMS40Njc1IDExLjQwNUMyMC4zNzQ3IDExLjEwNiAxNi4wMDM2IDExLjEwNiAxNi4wMDM2IDExLjEwNkMxNi4wMDM2IDExLjEwNiAxMS42MzI2IDExLjEwNiAxMC41Mzk4IDExLjM5MzZDOS45NTMxNiAxMS41NTQ1IDkuNDY5OTggMTIuMDM3NyA5LjMwOTA2IDEyLjYzNTlDOS4wMjE0OCAxMy43Mjg2IDkuMDIxNDggMTUuOTk0NiA5LjAyMTQ4IDE1Ljk5NDZDOS4wMjE0OCAxNS45OTQ2IDkuMDIxNDggMTguMjcyMSA5LjMwOTA2IDE5LjM1MzRDOS40NzAxNSAxOS45NTE2IDkuOTQxNjYgMjAuNDIzMiAxMC41Mzk5IDIwLjU4NDJDMTEuNjQ0MSAyMC44ODMzIDE2LjAwMzcgMjAuODgzMyAxNi4wMDM3IDIwLjg4MzNDMTYuMDAzNyAyMC44ODMzIDIwLjM3NDcgMjAuODgzMyAyMS40Njc1IDIwLjU5NTdDMjIuMDY1NyAyMC40MzQ3IDIyLjUzNzMgMTkuOTYzMSAyMi42OTg0IDE5LjM2NDlDMjIuOTg1OSAxOC4yNzIxIDIyLjk4NTkgMTYuMDA2MSAyMi45ODU5IDE2LjAwNjFDMjIuOTg1OSAxNi4wMDYxIDIyLjk5NzQgMTMuNzI4NiAyMi42OTgyIDEyLjYzNTlWMTIuNjM1OVpNMTQuNjExOSAxOC4wODgxVjEzLjkwMTJMMTguMjQ2NyAxNS45OTQ2TDE0LjYxMTkgMTguMDg4MVoiIGZpbGw9IndoaXRlIi8+CjwvZz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSIxNCIgaGVpZ2h0PSI5Ljc4NDcxIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOSAxMS4xMDI1KSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo="
@@ -103,7 +114,7 @@ const Footer = () => {
           </a>
           <a
             href="https://www.linkedin.com/company/unschool-it"
-            className="footer-social-link"
+            className={footersociallink}
             target="_blank"
             rel="noreferrer"
           >
@@ -114,7 +125,7 @@ const Footer = () => {
           </a>
           <a
             href="https://www.facebook.com/unschool.in"
-            className="footer-social-link"
+            className={footersociallink}
             target="_blank"
             rel="noreferrer"
           >
@@ -130,3 +141,4 @@ const Footer = () => {
 }
 
 export default Footer
+

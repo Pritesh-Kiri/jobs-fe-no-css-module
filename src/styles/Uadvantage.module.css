@@ -1,0 +1,259 @@
+.Uadvantagesection {
+    background-color: var(--white);
+    color: var(--white);
+    padding: 50px 120px;
+  }
+  .Uadvantagesection,
+  .Uadvantagesection .Uadvantagetitle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Uadvantagesection .Uadvantagetitle {
+    max-width: 1140px;
+  }
+  .Uadvantagesection .Uadvantagetitle h2 {
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .Uadvantagecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .Uadvantageinner,
+  .Uadvantageinner .Uadvantageinnersection {
+    display: flex;
+    justify-content: center;
+    max-width: 1140px;
+    width: 100%;
+  }
+  .Uadvantageinner .Uadvantageinnersection {
+    flex-direction: column;
+  }
+  .Uadvantageinner .question {
+    padding-bottom: 10px;
+  }
+  .Uadvantageinner .question .Uadvantagetopicinner {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+  }
+  .Uadvantageinner .question header {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .Uadvantageinner .question header .btn {
+    cursor: pointer;
+    margin: 0 30px;
+  }
+  .Uadvantageinner .question header .topic h4 {
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500 !important;
+    line-height: 45px;
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  .Uadvantageinner .question header .topic p {
+    color: #000;
+    margin-top: 0;
+    padding-left: 20px;
+  }
+  .Uadvantageinner .question .answersection {
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+  .Uadvantageinner .question .answersection.open {
+    height: auto;
+  }
+  .Uadvantageinner .question .answersection .anscol {
+    color: #343434;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 20px;
+  }
+  .Uadvantageinner .question .answersection .anscol h5 {
+    margin: 5px 3px 3px;
+  }
+  .Uadvantageinner .question .answersection .anscol p {
+    color: #8a8a8a;
+    font-size: 15px;
+    margin: 3px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 776px) {
+    .Uadvantagesection {
+      background-color: var(--white);
+      color: var(--white);
+      padding: 20px 10px;
+    }
+    .Uadvantagesection,
+    .Uadvantagesection .Uadvantagetitle {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .Uadvantagesection .Uadvantagetitle h2 {
+      font-size: 35px;
+      font-weight: 500;
+      text-align: center;
+    }
+    .Uadvantagecontainer {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+    .Uadvantageinner {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .Uadvantageinner .Uadvantageinnersection {
+      width: 100%;
+    }
+    .Uadvantageinner .question {
+      padding-bottom: 10px;
+    }
+    .Uadvantageinner .question .Uadvantagetopicinner {
+      background-color: #fff;
+      border-radius: 15px;
+      width: 100%;
+    }
+    .Uadvantageinner .question header {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .Uadvantageinner .question header .btn {
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    .Uadvantageinner .question header .topic h4 {
+      color: #000;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 45px;
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+    .Uadvantageinner .question header .topic p {
+      color: #000;
+      margin-top: 0;
+      padding-left: 20px;
+    }
+    .Uadvantageinner .question .answersection {
+      background-color: #fff;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s ease;
+    }
+    .Uadvantageinner .question .answersection.open {
+      height: auto;
+    }
+    .Uadvantageinner .question .answersection .anscol {
+      color: #343434;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-left: 0;
+      margin-top: 0;
+      padding-left: 20px;
+    }
+    .Uadvantageinner .question .answersection .anscol h5 {
+      margin: 5px 3px 3px;
+    }
+    .Uadvantageinner .question .answersection .anscol p {
+      font-size: 12px;
+      margin: 3px;
+      width: 90%;
+    }
+  }
+  .numbercontainer {
+    align-items: center;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1140px;
+    padding: 10px 0;
+  }
+  .numbercontainer .numberinner {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .numbercontainer .numberinner .numberitem {
+    align-items: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 215px;
+  }
+  .numbercontainer .numberinner .numberitem img {
+    width: 80px;
+  }
+  .numbercontainer .numberinner .numberitem h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .numbercontainer .numberinner .numberitem p {
+    margin-top: 0;
+  }
+  @media screen and (max-width: 776px) {
+    .numbercontainer {
+      margin: 0;
+    }
+    .numbercontainer .numberinner {
+      flex-wrap: wrap;
+    }
+    .numbercontainer .numberinner .numberitem {
+      align-items: center;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 3px;
+      width: 60px;
+    }
+    .numbercontainer .numberinner .numberitem h4 {
+      font-size: 13px;
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+    .numbercontainer .numberinner .numberitem p {
+      font-size: 10px;
+      margin-top: 0;
+      text-align: center;
+    }
+    .numbercontainer .numberinner .numberitem img {
+      width: 35px;
+    }
+  }

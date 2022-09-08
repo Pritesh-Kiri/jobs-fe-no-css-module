@@ -1,0 +1,341 @@
+.maincontainerExpert {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.containerExpert {
+  max-width: 1100px;
+  padding: 30px 200px 100px;
+}
+.Experttitle {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.Experttitle h2 {
+  font-size: 35px;
+  padding-top: 50px;
+  text-align: center;
+}
+.Experttitle p {
+  font-size: 20px;
+}
+.Expertcard {
+  border: 2px solid #fff;
+  border-radius: 22px;
+  height: 300px;
+  margin: 30px 5px 30px 10px;
+  padding: 0;
+  width: 1070px !important;
+}
+.Expertcard,
+.Expertcard .Expertcardtop {
+  align-items: center;
+  background-color: var(--black-bg);
+  display: flex;
+  flex-direction: row;
+}
+.Expertcard .Expertcardtop {
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 400;
+  height: 100%;
+  justify-content: center;
+  padding-left: 20px;
+  width: 40%;
+}
+.Expertcard .Expertimg {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+.Expertcard .Expertimg img {
+  border-radius: 50%;
+  height: 170px;
+  width: 100%;
+  width: 170px;
+}
+.Expertcard .Expertcontent {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+  padding: 0 10px 10px;
+}
+.Expertcard .Expertcontent .Expertname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.Expertcard .Expertcontent .Expertname a {
+  height: 30px;
+  position: relative;
+  right: 6px;
+  top: -18px;
+  width: 30px;
+}
+.Expertcard .Expertcontent .Expertname img {
+  height: 30px;
+  position: relative;
+  right: 6px;
+  top: -2px;
+  width: 30px;
+}
+.Expertcard .Expertcontent p {
+  color: #fff;
+  font-size: 15px;
+}
+.Expertcard .Expertcontent .Expertname h3 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.Expertcard .Expertcontent .Expertextra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.Expertcard .Expertcontent .Expertextra .Expertcompany {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.Expertcard .Expertcontent .Expertextra .Expertcompany .Expertcompanyimg {
+  display: flex;
+  flex-direction: row;
+}
+.Expertcard
+  .Expertcontent
+  .Expertextra
+  .Expertcompany
+  .Expertcompanyimg
+  img {
+  background-color: transparent;
+  border-radius: 10px;
+  height: 45px;
+  margin: 0 10px;
+  width: 100px;
+}
+.Expertcard .Expertcontent .Expertextra .Expertuniversity {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.Expertcard
+  .Expertcontent
+  .Expertextra
+  .Expertuniversity
+  .Expertuniversityimg {
+  display: flex;
+  flex-direction: row;
+}
+.Expertcard
+  .Expertcontent
+  .Expertextra
+  .Expertuniversity
+  .Expertuniversityimg
+  img {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 50px;
+  margin: 0 10px;
+  width: 100px;
+}
+@media only screen and (max-width: 776px) {
+  .maincontainerExpert {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .containerExpert {
+    background-color: #fff;
+    max-width: 300px;
+    padding: 0 0 50px;
+  }
+  .Experttitle {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .Experttitle h2 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  .Experttitle p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .Expertcard {
+    align-items: center;
+    background-color: var(--black-bg);
+    border: 2px solid #fff;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    margin: 30px 5px 30px 10px;
+    padding: 0;
+    width: 270px !important;
+  }
+  .Expertcard .Expertcardtop {
+    color: #fff;
+    flex-direction: row;
+    font-weight: 400;
+    height: 25%;
+    padding: 0 !important;
+  }
+  .Expertcard .Expertcardtop,
+  .Expertcard .Expertimg {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .Expertcard .Expertimg {
+    padding: 15px;
+  }
+  .Expertcard .Expertimg img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+  }
+  .Expertcard .Expertcontent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+    padding: 0 10px 10px;
+    width: 100%;
+  }
+  .Expertcard .Expertcontent .Expertname {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .Expertcard .Expertcontent .Expertname a {
+    height: 30px;
+    position: relative;
+    right: -296px;
+    top: -112px;
+    width: 30px;
+  }
+  .Expertcard .Expertcontent .Expertname img {
+    height: 30px;
+    position: relative;
+    width: 30px;
+  }
+  .Expertcard .Expertcontent .Expertdes {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .Expertcard .Expertcontent .Expertdes p {
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .Expertcard .Expertcontent .Expertname h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    right: -15px;
+    text-align: right;
+    text-align: center;
+    width: 235px;
+  }
+  .Expertcard .Expertcontent .Expertextra {
+    justify-content: space-between;
+  }
+  .Expertcard .Expertcontent .Expertextra,
+  .Expertcard .Expertcontent .Expertextra .Expertcompany {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Expertcard .Expertcontent .Expertextra .Expertcompany p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .Expertcard
+    .Expertcontent
+    .Expertextra
+    .Expertcompany
+    .Expertcompanyimg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .Expertcard
+    .Expertcontent
+    .Expertextra
+    .Expertcompany
+    .Expertcompanyimg
+    img {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 30px;
+    margin: 5px;
+    width: 60px;
+  }
+  .Expertcard .Expertcontent .Expertextra .Expertuniversity {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Expertcard .Expertcontent .Expertextra .Expertuniversity p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .Expertcard
+    .Expertcontent
+    .Expertextra
+    .Expertuniversity
+    .Expertuniversityimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Expertcard
+    .Expertcontent
+    .Expertextra
+    .Expertuniversity
+    .Expertuniversityimg
+    img {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    margin: 0 10px;
+    width: 100px;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+}

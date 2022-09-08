@@ -1,6 +1,16 @@
 import React, { useState } from "react"
 import JSON from "../data/UAdvantage.json"
 import UAdvantage from "./UAdvantage"
+import {
+  Uadvantagesection,
+  Uadvantagetitle,
+  numbercontainer,
+  numberinner,
+  numberitem,
+  Uadvantagecontainer,
+  Uadvantageinner,
+  Uadvantageinnersection
+} from "../styles/Uadvantage.module.css"
 const UnschoolAdvantage = () => {
   const [clicked, setClicked] = useState("0")
 
@@ -11,17 +21,17 @@ const UnschoolAdvantage = () => {
     setClicked(index)
   }
   return (
-    <section className="Uadvantage-section">
-      <div className="Uadvantage-title">
+    <section className={Uadvantagesection}>
+      <div className={Uadvantagetitle}>
         <h2>The Unschool Advantage</h2>
         {/* <p>
           Best-in-class content by leading faculty and industry leaders in the
           form of videos, , live sessions and projects
         </p> */}
       </div>
-      <div className="number-container">
-        <div className="number-inner">
-          <div className="number-item">
+      <div className={numbercontainer}>
+        <div className={numberinner}>
+          <div className={numberitem}>
             <img
               src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095353/Levelup%20jobs/Uadvantage/0-11_1_lzgclx.png"
               alt=""
@@ -30,7 +40,7 @@ const UnschoolAdvantage = () => {
             <p>Learners</p>
           </div>
 
-          <div className="number-item">
+          <div className={numberitem}>
             <img
               src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095353/Levelup%20jobs/Uadvantage/0-14_1_xkvytm.png"
               alt=""
@@ -40,7 +50,7 @@ const UnschoolAdvantage = () => {
             <p>Hiring Partners</p>
           </div>
 
-          <div className="number-item">
+          <div className={numberitem}>
             <img
               src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095353/Levelup%20jobs/Uadvantage/0-17_1_r8ooat.png"
               alt=""
@@ -50,7 +60,7 @@ const UnschoolAdvantage = () => {
             <p>Enrollments</p>
           </div>
 
-          <div className="number-item">
+          <div className={numberitem}>
             <img
               src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095353/Levelup%20jobs/Uadvantage/0-15_1_wsb9d3.png"
               alt=""
@@ -60,7 +70,7 @@ const UnschoolAdvantage = () => {
             <p>Industry Experts</p>
           </div>
 
-          <div className="number-item">
+          <div className={numberitem}>
             <img
               src="https://res.cloudinary.com/di3tuzgef/image/upload/v1659095353/Levelup%20jobs/Uadvantage/0-18_1_qqfsdg.png"
               alt=""
@@ -71,9 +81,9 @@ const UnschoolAdvantage = () => {
           </div>
         </div>
       </div>
-      <div className="Uadvantage-container">
-        <div className="Uadvantage-inner">
-          <div className="Uadvantage-inner-section">
+      <div className={Uadvantagecontainer}>
+        <div className={Uadvantageinner}>
+          <div className={Uadvantageinnersection}>
             {JSON.Uadvantagedata.map((item, index) => {
               return (
                 <UAdvantage

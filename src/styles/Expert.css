@@ -1,0 +1,5 @@
+@media only screen and (max-width: 776px) {
+  .slick-dots {
+    display: none !important;
+  }
+}
